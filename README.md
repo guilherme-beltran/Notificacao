@@ -44,7 +44,7 @@ Copiar este código na classe que irá consumir o alerta:
   Por fim, quando necessário abrir o alerta, deve-se chamar o método AbrirAlerta() passando por parâmetro as informações do alerta.
 Exemplo:
 
-AbrirAlerta(backColor: Color.LightGreen, linhaAlertaColor: Color.SeaGreen, titulo: "Sucesso", texto: "Operação realizada com sucesso!", icone: Properties.Resources.sucesso);
+        AbrirAlerta(backColor: Color.LightGreen, linhaAlertaColor: Color.SeaGreen, titulo: "Sucesso", texto: "Operação realizada com sucesso!", icone: Properties.Resources.sucesso);
 
 # O que preciso saber?
 Este projeto possui um padrão de cores e um padrão de icones. Os ícones estão associados aos recursos do aplicativo, porém podem ser apontados para uma imagem em uma pasta específica.
