@@ -1,3 +1,20 @@
+Alerta de sucesso:
+
+![Alerta sucesso](https://github.com/guiconkerz/Notificacao/assets/14238319/afccdde7-0378-4f68-b278-905e6143e2bf)
+
+Alerta de Erro:
+
+![Alerta erro](https://github.com/guiconkerz/Notificacao/assets/14238319/3069330e-c503-4e66-a11d-fdc500b8a4c5)
+
+Alerta de Aviso:
+
+![Alerta aviso](https://github.com/guiconkerz/Notificacao/assets/14238319/d0d172a1-1895-4040-9112-2d152e27a5aa)
+
+Alerta de Informação:
+
+![Alerta info](https://github.com/guiconkerz/Notificacao/assets/14238319/63f996f9-bec5-446d-8103-f235a47bfa81)
+
+
 # Como utilizar?
 Para utilizar o alerta deve-se criar um método na classe principal (consumidor do alerta) 
 
