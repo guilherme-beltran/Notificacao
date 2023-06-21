@@ -61,7 +61,7 @@
   <data name="btnFechar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAB3YSURBVHhe7d3b
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAB3YSURBVHhe7d3b
         j29pXefx4tDNJIqEDpAYGTyATeP1xMtxokDToCZzwYUHDs6FN8YomoxoO8YrBYKMM/FAggo43hlB/Q8Q
         FEUTHTJkIoI0jS00aBMulKa7Qb/P7v7trt21qup3WOuznrXW65W8E1K9D03Xep7vt35Vu/ZZwLOrV1U/
         V727+lD1yeqfqy9XX60eqj5TfbT6g+qt1Ruqb6sAYIleXLVZ1mba+6o249qsazPva1WbgW0Wtpn4wep3
@@ -192,4 +192,7 @@
         pnpl9ZxqQmdn/w4/NWBviOFrlQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

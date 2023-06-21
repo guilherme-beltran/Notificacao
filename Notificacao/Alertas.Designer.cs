@@ -32,10 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Alertas));
             pbAlerta = new PictureBox();
             tituloAlerta = new Label();
-            textoAlerta = new Label();
             linhaAlerta = new Panel();
             timerAnimacao = new System.Windows.Forms.Timer(components);
             btnFechar = new PictureBox();
+            imageList1 = new ImageList(components);
+            textoAlerta = new Label();
             ((System.ComponentModel.ISupportInitialize)pbAlerta).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnFechar).BeginInit();
             SuspendLayout();
@@ -59,21 +60,11 @@
             tituloAlerta.TabIndex = 1;
             tituloAlerta.Text = "Titulo";
             // 
-            // textoAlerta
-            // 
-            textoAlerta.AutoSize = true;
-            textoAlerta.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textoAlerta.Location = new Point(77, 52);
-            textoAlerta.Name = "textoAlerta";
-            textoAlerta.Size = new Size(110, 21);
-            textoAlerta.TabIndex = 2;
-            textoAlerta.Text = "Texto do alerta";
-            // 
             // linhaAlerta
             // 
             linhaAlerta.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             linhaAlerta.BackColor = Color.Black;
-            linhaAlerta.Location = new Point(0, 94);
+            linhaAlerta.Location = new Point(0, 99);
             linhaAlerta.Name = "linhaAlerta";
             linhaAlerta.Size = new Size(5, 6);
             linhaAlerta.TabIndex = 3;
@@ -96,16 +87,34 @@
             btnFechar.TabStop = false;
             btnFechar.Click += btnFechar_Click;
             // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = ColorDepth.Depth32Bit;
+            imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
+            imageList1.TransparentColor = Color.Transparent;
+            imageList1.Images.SetKeyName(0, "detalhes.png");
+            // 
+            // textoAlerta
+            // 
+            textoAlerta.AutoSize = true;
+            textoAlerta.Location = new Point(77, 53);
+            textoAlerta.Name = "textoAlerta";
+            textoAlerta.Size = new Size(110, 21);
+            textoAlerta.TabIndex = 6;
+            textoAlerta.Text = "Texto do alerta";
+            // 
             // Alertas
             // 
             AutoScaleMode = AutoScaleMode.None;
+            AutoScroll = true;
+            AutoSize = true;
             BackColor = Color.White;
-            ClientSize = new Size(500, 100);
+            ClientSize = new Size(500, 105);
             Controls.Add(btnFechar);
             Controls.Add(linhaAlerta);
-            Controls.Add(textoAlerta);
             Controls.Add(tituloAlerta);
             Controls.Add(pbAlerta);
+            Controls.Add(textoAlerta);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
@@ -121,9 +130,10 @@
 
         private PictureBox pbAlerta;
         private Label tituloAlerta;
-        private Label textoAlerta;
         private Panel linhaAlerta;
         private System.Windows.Forms.Timer timerAnimacao;
         private PictureBox btnFechar;
+        private ImageList imageList1;
+        private Label textoAlerta;
     }
 }

@@ -66,6 +66,8 @@ namespace Notificacao
         public Alertas()
         {
             InitializeComponent();
+            textoAlerta.MaximumSize = new Size(400, 400);
+            textoAlerta.AutoSize = true;
         }
         #endregion 
 
@@ -105,6 +107,9 @@ namespace Notificacao
         private void Alertas_Load(object sender, EventArgs e)
         {
             PositionAlerta();
+            int diferencaAltura = Height - textoAlerta.Height;
+            Height = diferencaAltura + textoAlerta.PreferredHeight;
+
             for (int i = 0; i < 500; i++)
             {
                 timerAnimacao.Start();
